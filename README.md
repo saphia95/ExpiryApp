@@ -1,14 +1,14 @@
 # ExpiryApp
 
-In order to run the script, you need to type the following line of code within the ExpiryApp repository:
+In order to run the script, you need to type the following command line within the ExpiryApp repository:
 
 ```bash
 python tracker.py
 ```
 
-##A detailed explanation of the analysis performed.
-I put csv on a data folder.
-I used EAN as a product reference id.
+## A detailed explanation of the analysis performed.
+I put csv on the folder named data.\
+I used EAN as a product reference id.\
 From the retailer extract, I considered only product references without "Hors assortiment" in column "Etat Assortiment".
 Among those products, I removed those that were already initialized in references_initialized_in_shop.csv.
 To determine in which aisle our users should add these new products, I went through already initialized products,
@@ -19,7 +19,7 @@ The column we return in this csv :
 - EAN,
 - Libellé  Groupe de Famille,
 - Article Libellé Long,
-- Aisle
+- Aisle.
 
 The csv appears in the data folder.
 
